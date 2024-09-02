@@ -30,7 +30,7 @@ const Donations = () => {
                     donation.slice(0,dataLength).map((cart,idx) => <Donation key={idx} cart={cart}></Donation>)
                 }
              </div>
-             <div onClick={()=>setDataLength(donation.length)} className={`flex justify-center ${donation.length===dataLength && 'hidden'}`}>
+             <div onClick={()=>setDataLength(donation.length)} className={`flex justify-center ${dataLength  === donation.length && 'hidden'}`}>
              <button className="py-2 px-6 rounded-lg text-2xl bg-violet-700 text-white mb-10">Show All</button>
              </div>
         </div>
